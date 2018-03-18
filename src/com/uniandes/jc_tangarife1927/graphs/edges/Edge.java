@@ -18,4 +18,8 @@ public class Edge {
 	public Node getTarget() {
 		return target;
 	}
+	
+	public String toString() {
+		return source + " ----> " + target;
+	}
 }

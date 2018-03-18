@@ -12,7 +12,7 @@ public class WeightedEdgeFactory extends EdgeFactory{
 	}
 
 	@Override
-	public Edge createEdge(Node source, Node targetht) {
+	public Edge createEdge(Node source, Node target) {
 		return null;
 	}
 

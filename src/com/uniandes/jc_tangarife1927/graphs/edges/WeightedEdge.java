@@ -13,5 +13,9 @@ public class WeightedEdge extends Edge {
 	public int getWeight() {
 		return weight;
 	}
+	
+	public String toString() {
+		return source + " --(" + weight + ")--> " + target;
+	}
 
 }

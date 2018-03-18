@@ -7,7 +7,11 @@ public class Node {
 		element = nElement;
 	}
 	
-	public String getElemenet() {
+	public String getElement() {
+		return element;
+	}
+	
+	public String toString() {
 		return element;
 	}
 }
