@@ -10,4 +10,9 @@ public class UnweightedEdgeFactory extends EdgeFactory{
 		return new Edge(source, target);
 	}
 
+	@Override
+	public Edge createEdge(Node source, Node target, int weight) {
+		return null;
+	}
+
 }

@@ -28,8 +28,12 @@ public class Main {
 		graph.addNode(n);
 	}
 	
-	private void addEdge(Node source, Node target) {
+	private void addEdge(Node source, Node target) throws Exception {
 		graph.addEdge(source, target);
+	}
+	
+	private void addEdge(Node source, Node target, int weight) throws Exception {
+		graph.addEdge(source, target, weight);
 	}
 	
 	private void initialize() {

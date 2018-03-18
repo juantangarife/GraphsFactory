@@ -33,7 +33,9 @@ public abstract class Graph {
 		nodes.add(new Node(n));
 	}
 	
-	public abstract void addEdge(Node source, Node target);
+	public abstract void addEdge(Node source, Node target) throws Exception;
+	
+	public abstract void addEdge(Node source, Node target, int weight) throws Exception;
 	
 	public void search(Node a) throws Exception{
 		if(searchStrategy != null) {
