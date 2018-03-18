@@ -33,6 +33,7 @@ public class Main {
 	}
 	
 	private void initialize() {
+		// TODO Cargar las clases de un archivo de configuración
 		graphFactory = new DirectedGraphFactory();
 		searchStrategy = new BFSSearchStrategy();
 		edgeFactory = new UnweightedEdgeFactory();
