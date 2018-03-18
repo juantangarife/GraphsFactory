@@ -6,8 +6,8 @@ import com.uniandes.jc_tangarife1927.graphs.Graph;
 public class UndirectedGraphFactory extends GraphFactory {
 
 	@Override
-	public Graph getGraph(ISearchStrategy nSearchStrategy) {
-		return new DirectedGraph(nSearchStrategy);
+	public Graph getGraph(ISearchStrategy nSearchStrategy, EdgeFactory edgeFactory) {
+		return new DirectedGraph(nSearchStrategy, edgeFactory);
 	}
 	
 }

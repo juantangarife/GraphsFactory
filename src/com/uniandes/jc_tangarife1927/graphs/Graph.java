@@ -3,6 +3,7 @@ package com.uniandes.jc_tangarife1927.graphs;
 import java.util.ArrayList;
 
 import com.uniandes.jc_tangarife1927.graphs.edges.Edge;
+import com.uniandes.jc_tangarife1927.graphs.factories.EdgeFactory;
 import com.uniandes.jc_tangarife1927.graphs.factories.ISearchStrategy;
 import com.uniandes.jc_tangarife1927.graphs.nodes.Node;
 
@@ -11,11 +12,13 @@ public abstract class Graph {
 	protected ArrayList<Node> nodes;
 	protected ArrayList<Edge> edges;
 	protected ISearchStrategy searchStrategy;
+	protected EdgeFactory edgeFactory;
 	
-	public Graph(ISearchStrategy nSearchStrategy) {
+	public Graph(ISearchStrategy nSearchStrategy, EdgeFactory nEdgeFactory) {
 		nodes = new ArrayList<Node>();
 		edges = new ArrayList<Edge>();
 		searchStrategy = nSearchStrategy;
+		edgeFactory = nEdgeFactory;
 	}
 	
 	public ArrayList<Node> getNodes() {
